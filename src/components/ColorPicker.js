@@ -35,6 +35,7 @@ const ColorPicker = ({
     <TextField
       name={name}
       id={id}
+      value={value === undefined ? internalValue : value}
       label={floatingLabelText || label}
       placeholder={hintText || placeholder}
       onClick={() => setShowPicker(true)}
